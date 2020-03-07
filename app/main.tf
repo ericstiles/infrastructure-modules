@@ -20,3 +20,10 @@ terraform {
 
 variable "instance_type" {}
 variable "instance_count" {}
+variable "value" {
+  default = "default value"
+}
+
+output "value" {
+  value = var.value
+}
